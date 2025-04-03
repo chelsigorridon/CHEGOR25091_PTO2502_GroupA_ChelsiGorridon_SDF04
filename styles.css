@@ -1,32 +1,38 @@
-
-
-.flex {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+  
+  .flex {
     background-color: #659f8f;
-    padding: 1em;
-    font-family: Arial, Helvetica,sans-serif;
-    padding: 1em;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(10px, 1fr));;
-}
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    padding: 5em;
+    
+    
+  }      
+    
 
-.logo {
-    height: 10%;
-    width: 10%;
-    display: flexbox;
-    align-items: end;
-}
+  .sub, .quick, .tech {
+      
+      font-family: Arial, sans-serif;
+        
+        
+  }
 
-.Sub {
-    align-content: center;
-    flex-direction: column;
-    justify-items:flex-start ;
-    padding-right: 20%;
-}
+   .h3 {
+    font-size: small;
+  }
 
-.Quick {
-    display: grid;
-    align-content: center;
-    flex-direction: column;
-    justify-items:center;
-}
+  .h2 {
+    font-size: 18px;
+  }
+
+  .list {
+    list-style-type: none;
+    font-size: small;
+
+  }
