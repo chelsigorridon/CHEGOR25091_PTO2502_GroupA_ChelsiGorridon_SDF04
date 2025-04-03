@@ -10,15 +10,17 @@
     display: flex;
     justify-content: center;
     gap: 20%;
-    padding: 5em;
+    padding: 3em;
     
     
   }      
     
+  
 
   .sub, .quick, .tech {
       
       font-family: Arial, sans-serif;
+      margin-top: 5%;
         
         
   }
@@ -40,14 +42,21 @@
 
   #email {
     border-radius: 5px;
-    width: 45%;
-    height: 50%;
+    width: 43%;
+    height: 15%;
   }
 
   .btn {
     background-color: rgb(170, 72, 36);
     color: white;
     border-radius: 5px;
-    width: 20%;
-    height: 50%;
+    width: 17%;
+    height: 15%;
+  
+  }
+
+  .Logo {
+    width: 10em;
+    height: 10em;
+    
   }
