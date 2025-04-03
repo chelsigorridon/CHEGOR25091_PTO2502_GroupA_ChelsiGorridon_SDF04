@@ -29,10 +29,25 @@
 
   .h2 {
     font-size: 18px;
+    margin-bottom: 12px;
   }
 
   .list {
     list-style-type: none;
     font-size: small;
 
+  }
+
+  #email {
+    border-radius: 5px;
+    width: 45%;
+    height: 50%;
+  }
+
+  .btn {
+    background-color: rgb(170, 72, 36);
+    color: white;
+    border-radius: 5px;
+    width: 20%;
+    height: 50%;
   }
