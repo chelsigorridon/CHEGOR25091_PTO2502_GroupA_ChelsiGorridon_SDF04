@@ -5,19 +5,22 @@
   }
   
   
-  .flex {
+  .flex{
     background-color: #659f8f;
-    display: flex;
-    justify-content: center;
-    gap: 15%;
-    padding: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 5%;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+  
     
+  }
+   
+  
     
-    
-  }      
-    
-
-     
+      
   
 
   .sub, .quick, .tech {
@@ -25,8 +28,7 @@
       font-family: Arial, sans-serif;
       margin-top: 5%;
       text-transform: capitalize;
-      
-          
+           
         
   }
 
@@ -55,9 +57,10 @@
     border-radius: 5px;
     width:  auto;
     height: 30px;
-    text-align: left;
+    
     box-shadow: none;
     border: none;
+    
     
   
     
@@ -69,7 +72,7 @@
     border-radius: 5px;
     box-shadow: none;
     border: none;
-    width: 75px;
+    width: auto;
     height: 30px;
     text-align: center;
     
@@ -77,15 +80,40 @@
 
       .Logo {
        display: flex;
-       position: sticky;
-       bottom: 10;
-       margin-top: 20%;
-       width: 40%;
-       height: 25px;
+       align-self: flex-end;
+       top: 70%;
        
        
+       width: 150px;
+       height: 100px;
        
 
   }
+
+  @media screen and (max-width: 624px) {
+    .flex {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      width: 70%;
+    }
+    .btn,.email {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      margin: auto;
+      
+      
+    }
+    
+    .email {
+      margin-bottom: 10px;
+    }
+
+   }
+
+  
+
+
 
  
