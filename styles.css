@@ -9,19 +9,51 @@
     background-color: #659f8f;
     display: flex;
     justify-content: center;
-    gap: 20%;
+    gap: 15%;
     padding: 3em;
+    
     
     
   }      
     
+  @media screen and (max-width: 667px) {
+    .flex,  .btn, .email{
+      flex-direction: column;
+      padding: 0.5em;
+     margin-top: 10px;
+     margin-right: 10px;
+      margin-left: 30px;
+      border-radius: 7px;
+      text-align: left;
+      
+    }
+  
+  }
+
+
+
+    @media screen and (max-width: 1024px) {
+        .quick, .tech { 
+        
+      
+    
+      }
+
+
+
+
+    
+   
+     
   
 
   .sub, .quick, .tech {
       
       font-family: Arial, sans-serif;
       margin-top: 5%;
-        
+      text-transform: capitalize;
+      
+          
         
   }
 
@@ -37,26 +69,35 @@
   .list {
     list-style-type: none;
     font-size: small;
+    margin: 1em;
 
   }
 
-  #email {
+  .email {
     border-radius: 5px;
-    width: 43%;
-    height: 15%;
+    width:  75%;
+    height: 25%;
+    text-align: left;
+    
+    
   }
 
   .btn {
     background-color: rgb(170, 72, 36);
     color: white;
     border-radius: 5px;
-    width: 17%;
-    height: 15%;
+    width: 75%;
+    height: 25%;
+    text-align: center;
+    
   
   }
 
   .Logo {
     width: 10em;
     height: 10em;
+    
+    
+    
     
   }
