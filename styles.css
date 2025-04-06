@@ -5,7 +5,9 @@
   }
   
   
-  .flex {
+   /*Container*/ 
+
+  .flex { 
     background-color: #659f8f;
     display: grid;
     grid-template-columns: 0.4fr 0.2fr 0.2fr;
@@ -20,6 +22,7 @@
   }
   
   
+   /*Changed Margin & Font of Main Divs Inside Container*/  
 
   .sub, .quick, .tech {
     
@@ -33,16 +36,20 @@
   }
 
  
+   /*Changed the font of the Heading for .Quick & .Tech Divs*/
    
-
    .h3 {
     font-size: small;
   }
+
+  /*Changed the font of the heading for .Sub Div*/ 
 
   .h2 {
     font-size: 18px;
     margin-bottom: 12px;
   }
+
+   /*Created Spaces in between the lists by using flexbox and changed the direction of the text*/ 
 
   .list, .h3 {
     display: flex;
@@ -53,8 +60,9 @@
     gap: 0.7rem;
     text-align: left;
     
-
   }
+
+  /*Changed the style of the email section*/ 
 
   .email {
     border-radius: 5px;
@@ -66,14 +74,15 @@
     
   }
 
- 
+  /*Added a hover effect on the button and changed the width and style*/ 
+
   .button {
     padding: 16px 32px;
     text-align: center;
     display: inline-block;
     margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
+    
+
   }
 
   .btn {
@@ -100,6 +109,7 @@
 
   }
 
+     /*Created a line above the Logo for styling*/ 
 
      .custom-line {
       border: none;
@@ -111,18 +121,18 @@
     
     }
       
+      /*Styled the logo added width and height*/   
 
       .Logo {
        display: block;
        width: 150px;
        height: 100px;
        margin-left: 15%;
-       
-       
 
        }
 
-  
+       /*Media Query for Responsiveness on iphone*/ 
+
        @media screen and (max-width: 599px) {
         .flex {
           display: flex;
@@ -162,6 +172,8 @@
         }
       }
   
+      /*Media Query for Responsiveness on ipads*/ 
+
       @media screen and (min-width: 600px) and (max-width: 1024px) {
         .flex {
           display: grid;
