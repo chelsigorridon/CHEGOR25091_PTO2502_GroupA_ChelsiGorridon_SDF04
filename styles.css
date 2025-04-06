@@ -186,7 +186,7 @@
         .sub {
           grid-column: span 3;
           margin-right: 20px;
-          margin-left: 40px;
+          margin-left: 45px;
         }
       
         .quick {
@@ -208,6 +208,7 @@
         .Logo {
           grid-column: span 3;
           margin-top: 40px;
+          margin-left: 19%;
         }
       }
       
