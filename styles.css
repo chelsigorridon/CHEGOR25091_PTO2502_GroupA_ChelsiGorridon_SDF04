@@ -96,43 +96,52 @@
          align-items: flex-start;
          margin: 20px;
          padding: 20px;
-         width: 80%;
+         width: 75%;
          
       }
 
       .btn, .email{
         display: inline;
         flex-direction: column;
-        width: 70%;
+        width: 92%;
         margin-left: 5px;
         margin-bottom: 7px;
         
       }
 
       .sub, .quick, .tech, .Logo {
-        margin-left: 30px;
+        margin-left: 15px;
       }
 
       .h2{
-        font-size: small;
+        font-size: 15px;
+      }
+
+      .Logo{
+       width: 120px;
+       height: auto;
+       margin-top: 30px;
+       margin-bottom: 30px;
       }
 }
   
-@media screen and (min-width: 601px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   .flex {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 100px;
-    width: 90%;
+    padding-left: 60px; 
+    padding-bottom: 70px;
+    padding-top: 50px;
+    width: 70%;
     
   }
 
   .btn, .email {
     display: inline;
-    flex-direction: row;
-    justify-content: flex-start;
+    
+    
     width: 50%;
     margin-bottom: 10px;
   }
@@ -143,9 +152,13 @@
   }
 
   .Logo {
+  
     width: 120px;
     height: auto;
+    margin-top: 50px;
+    margin-bottom: -25px;
   }
+  
+
 }
 
- 
