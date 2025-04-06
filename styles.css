@@ -10,27 +10,30 @@
     display: grid;
     grid-template-columns: 0.4fr 0.2fr 0.2fr;
     justify-content: space-evenly;
-    
     padding: 20px;
-    margin: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
     border-radius: 10px;
-    
-  }
-   
   
     
-      
+  }
+  
   
 
   .sub, .quick, .tech {
     
-      
+      margin-left: 15%;
+      margin-right: 10%;
       font-family: Arial, sans-serif;
       margin-top: 5%;
       text-transform: capitalize;
            
         
   }
+
+ 
+   
 
    .h3 {
     font-size: small;
@@ -57,44 +60,76 @@
     border-radius: 5px;
     width:  auto;
     height: 30px;
-    
     box-shadow: none;
     border: none;
     
     
-  
-    
+  }
+
+ 
+  .button {
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
   }
 
   .btn {
-    background-color: rgb(221, 84, 34);
-    color: white;
-    border-radius: 5px;
-    box-shadow: none;
-    border: none;
-    width: 20%;
+    color: rgb(249, 246, 244);
+    background-color: #d65f1c;
+    font-size: 12px;
+    width: 80px;
     height: 30px;
-    text-align: center;
+    border-radius: 5px;
+    border: none;
+    box-shadow: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    cursor: pointer;
     
+  }  
     
+
+  .btn:hover {
+    background-color: #2e564b;
+    
+
   }
+
+
+     .custom-line {
+      border: none;
+      height: 1px; 
+      background-color: #d65f1c; 
+      width: 200%; 
+      margin-top: 20px;
+      margin-left: 15%;
+    
+    }
+      
 
       .Logo {
-       display: flex;
-       align-self: flex-end;
+       display: block;
        width: 150px;
        height: 100px;
+       margin-left: 15%;
+       
        
 
-  }
+       }
 
   
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (max-width: 915px) {
       .flex {
          display: flex;
          flex-direction: column; 
          align-items: flex-start;
-         margin: 20px;
+         margin: auto;
+         margin-top: 30px;
          padding: 20px;
          width: 75%;
          
@@ -107,6 +142,7 @@
         margin-left: 5px;
         margin-bottom: 7px;
         
+        
       }
 
       .sub, .quick, .tech, .Logo {
@@ -114,51 +150,109 @@
       }
 
       .h2{
-        font-size: 15px;
+        font-size: 13px;
       }
 
       .Logo{
+       display: block;
        width: 120px;
        height: auto;
        margin-top: 30px;
        margin-bottom: 30px;
+       margin-left: 22px;
       }
+
+      .custom-line {
+        width: 150%; 
+        
 }
+ 
+
+ 
+  @media screen and (min-width: 915px) and (max-width: 1025px) {
+    .flex {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 20px;
+      width: auto;
+      height: auto;
+      padding: 20px;
+    }
   
-@media screen and (min-width: 600px) and (max-width: 1024px) {
-  .flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    padding-left: 60px; 
-    padding-bottom: 70px;
-    padding-top: 50px;
-    width: 70%;
-    
-  }
-
-  .btn, .email {
-    display: inline;
-    
-    
-    width: 50%;
-    margin-bottom: 10px;
-  }
-
-  .sub, .quick, .tech, .Logo {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .Logo {
+    .sub {
+      grid-column: span 3; 
   
-    width: 120px;
-    height: auto;
-    margin-top: 50px;
-    margin-bottom: -25px;
-  }
+      }
   
+    .tech {
+      grid-column: span 2;
+    }
+  
+    .btn {
+      display: inline-block;
+      width: auto;
+      margin-left: 5px;
+    }
+  
+    .email {
+      width: auto;
+    }
+  
+    .sub, .quick, .tech, .Logo {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .Logo {
+      display: block;
+      width: 120px;
+      height: auto;
+      margin-top: 50px;
+      margin-bottom: -25px;
+    }
+    }
 
-}
-
+    
+  @media screen and (min-width: 1025px) and (max-width: 1366px) {
+    .flex {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 20px;
+      width: auto;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .sub {
+      grid-column: span 3; 
+  
+      }
+  
+    .tech {
+      grid-column: span 2;
+    }
+  
+    .btn {
+      display: inline-block;
+      width: auto;
+      margin-left: 5px;
+    }
+  
+    .email {
+      width: auto;
+    }
+  
+    .sub, .quick, .tech, .Logo {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .Logo {
+      display: block;
+      width: 120px;
+      height: auto;
+      margin-top: 50px;
+      margin-bottom: -25px;
+    }
+    
+    }
