@@ -123,136 +123,79 @@
        }
 
   
-@media screen and (max-width: 600px) and (max-width: 915px) {
-      .flex {
-         display: flex;
-         flex-direction: column; 
-         align-items: flex-start;
-         margin: auto;
-         margin-top: 30px;
-         padding: 20px;
-         width: 75%;
-         
-      }
-
-      .btn, .email{
-        display: inline;
-        flex-direction: column;
-        width: 92%;
-        margin-left: 5px;
-        margin-bottom: 7px;
-        
-        
-      }
-
-      .sub, .quick, .tech, .Logo {
-        margin-left: 15px;
-      }
-
-      .h2{
-        font-size: 13px;
-      }
-
-      .Logo{
-       display: block;
-       width: 120px;
-       height: auto;
-       margin-top: 30px;
-       margin-bottom: 30px;
-       margin-left: 22px;
-      }
-
-      .custom-line {
-        width: 150%; 
-        
-}
- 
-
- 
-  @media screen and (min-width: 915px) and (max-width: 1025px) {
-    .flex {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); 
-      gap: 20px;
-      width: auto;
-      height: auto;
-      padding: 20px;
-    }
-  
-    .sub {
-      grid-column: span 3; 
-  
+       @media screen and (max-width: 599px) {
+        .flex {
+          display: flex;
+          flex-direction: column; 
+          align-items: flex-start;
+          margin-top: 30px;
+          padding: 20px;
+          width: 75%;
+        }
+      
+        .btn, .email {
+          display: inline;
+          width: 92%;
+          margin-left: 5px;
+          margin-bottom: 7px;
+        }
+      
+        .sub, .quick, .tech, .Logo {
+          margin-left: 15px;
+        }
+      
+        .h2 {
+          font-size: 13px;
+        }
+      
+        .Logo {
+          display: block;
+          width: 120px;
+          height: auto;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          margin-left: 22px;
+        }
+      
+        .custom-line {
+          width: 150%; 
+        }
       }
   
-    .tech {
-      grid-column: span 2;
-    }
-  
-    .btn {
-      display: inline-block;
-      width: auto;
-      margin-left: 5px;
-    }
-  
-    .email {
-      width: auto;
-    }
-  
-    .sub, .quick, .tech, .Logo {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-  
-    .Logo {
-      display: block;
-      width: 120px;
-      height: auto;
-      margin-top: 50px;
-      margin-bottom: -25px;
-    }
-    }
+      @media screen and (min-width: 600px) and (max-width: 1024px) {
+        .flex {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          justify-content: flex-start;
+          gap: 5px;
+          padding: 30px;
+        }
+      
+        .sub {
+          grid-column: span 3;
+          margin-right: 20px;
+          margin-left: 40px;
+        }
+      
+        .quick {
+          grid-column: span 1;
+        }
+      
+        .tech {
+          grid-column: span 2;
+        }
+      
+        .email {
+          width: 30%;
+        }
 
-    
-  @media screen and (min-width: 1025px) and (max-width: 1366px) {
-    .flex {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); 
-      gap: 20px;
-      width: auto;
-      height: auto;
-      padding: 20px;
-    }
-  
-    .sub {
-      grid-column: span 3; 
-  
+        .btn{
+          width: 15%;
+        }
+      
+        .Logo {
+          grid-column: span 3;
+          margin-top: 40px;
+        }
       }
-  
-    .tech {
-      grid-column: span 2;
-    }
-  
-    .btn {
-      display: inline-block;
-      width: auto;
-      margin-left: 5px;
-    }
-  
-    .email {
-      width: auto;
-    }
-  
-    .sub, .quick, .tech, .Logo {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-  
-    .Logo {
-      display: block;
-      width: 120px;
-      height: auto;
-      margin-top: 50px;
-      margin-bottom: -25px;
-    }
-    
-    }
+      
